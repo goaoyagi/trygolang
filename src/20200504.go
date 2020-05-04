@@ -12,7 +12,7 @@ func main() {
 	m := map[string]bool{"aaa": true, "bbb": true}
 	v, ok := m["aaa"]
 	fmt.Println("aaa:", v, ":", ok)
-	v, ok := m["ccc"]
+	v, ok = m["ccc"]
 	fmt.Println("ccc:", v, ":", ok)
 	fmt.Println(m)
 }

@@ -1,6 +1,9 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+	"trygolang/src/tour"
+)
 
 func main() {
 	a := 5
@@ -31,6 +34,14 @@ func main() {
 	fmt.Printf("before show() score: %d\n", u.score)
 	u.show()
 	fmt.Printf("after show() score: %d\n", u.score)
+	fmt.Println("--")
+
+	vertex := tour.Vertex{X: 3, Y: 4}
+	fmt.Println(vertex)
+	vertex.Scale(10)
+	fmt.Println(vertex)
+	fmt.Println(vertex.Abs())
+	fmt.Println(vertex)
 }
 
 type user struct {

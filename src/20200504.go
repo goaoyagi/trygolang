@@ -9,7 +9,7 @@ func main() {
 	fmt.Println("pointer address &a: " + pa)
 	fmt.Println("pointer value *pa: " + *pa)
 
-	m := map[aaa:true bbb:true]
+	m := map[string]bool{"aaa": true, "bbb": true}
 	v, ok := m["aaa"]
 	fmt.Println("aaa: " + v + " : " + ok)
 	fmt.Println(m)

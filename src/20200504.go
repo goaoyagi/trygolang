@@ -34,7 +34,7 @@ func main() {
 }
 
 type user struct {
-	name string
+	name  string
 	score int
 }
 
